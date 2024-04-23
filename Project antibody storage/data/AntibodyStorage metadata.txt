@@ -1,0 +1,36 @@
+PREFIX dcat: <http://www.w3.org/ns/dcat#> 
+PREFIX dct: <http://purl.org/dc/terms/>
+PREFIX sd: <http://www.w3.org/ns/sparql-service-description#> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/> 
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX cc: <http://creativecommons.org/ns#>
+
+<https://um.es/data/AntibodyDataset/> rdf:type dcat:Dataset ;
+                                    rdfs:label "Anticuerpos comerciales para uso experimental" ;
+                                    foaf:primaryTopic "Anticuerpos" ;
+                                    dct:License <http://creativecommons.org/licenses/MIT/> ;
+							dcat:distribution <https://um.es/txt/ontology> ;
+                                    dcat:distribution <https://um.es/sparql/AntibodyDataset> ;
+                                    sd:namedGraph <http://um.es/graph/AntibodyDataset> .
+
+<https://um.es/txt/ontology> a dcat:Distribution ;
+  							dcat:downloadURL <http://localhost/Ontology.rdf> ;
+  							dct:license <http://creativecommons.org/licenses/by/3.0/es/> ;
+  							dct:format <http://publications.europa.eu/resource/authority/file-type/TXT> .
+
+<https://um.es/sparql/AntibodyDataset> a dcat:Distribution ;
+  							dcat:accessURL <http://34.69.252.26:3031/blazegraph/namespace/AntibodyDataset/sparql> ;
+  							dct:license <http://creativecommons.org/licenses/MIT/> .
+
+<http://um.es/graph/AntibodyDataset> rdfs:label "Grafo RDF Anticuerpos experimental"@es ;
+                            		rdf:type sd:NamedGraph ;
+							dct:creator "Fernando Lucas Ruiz"@en .
+
+<http://creativecommons.org/licenses/MIT/>
+  a cc:License ;
+  cc:permits cc:Distribution, cc:Reproduction, cc:DerivativeWorks ;
+  cc:licenseClass <http://creativecommons.org/license/software> ;
+  cc:requires cc:Notice ;
+  cc:legalcode <http://opensource.org/licenses/mit-license.php> .
