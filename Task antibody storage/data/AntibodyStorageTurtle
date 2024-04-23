@@ -1,0 +1,1040 @@
+@prefix owl: 	<http://www.w3.org/2002/07/owl#> .
+@prefix rdf: 	<http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: 	<http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: 	<http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: 	<http://www.w3.org/2000/01/rdf-schema#> .
+@prefix obo:	<http://purl.obolibrary.org/obo/> .
+@prefix mionto:	<https://dayhoff.inf.um.es/ontologies/anticuerpos#> .
+@prefix metobo:	<https://data.bioontology.org/metadata/obo/> .
+@prefix up:		<http://purl.uniprot.org/core/> .
+@prefix uniprot:	<http://purl.uniprot.org/uniprot/> .
+
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://purl.obolibrary.org/obo/CL_0000103
+obo:CL_0000103
+	rdfs:subClassOf mionto:Cell ;
+	rdfs:label "Bipolar neuron" .
+
+
+###  http://purl.obolibrary.org/obo/CL_0000127
+obo:CL_0000127
+	rdfs:subClassOf mionto:Cell ;
+	rdfs:label "Astrocyte" .
+
+
+###  http://purl.obolibrary.org/obo/CL_0000129
+obo:CL_0000129
+	rdfs:subClassOf mionto:Cell ;
+	rdfs:label "Microglia" .
+
+
+###  http://purl.obolibrary.org/obo/CL_0000235
+obo:CL_0000235
+	rdfs:subClassOf mionto:Cell ;
+	rdfs:label "Macrophage" .
+
+
+###  http://purl.obolibrary.org/obo/CL_0000636
+obo:CL_0000636
+	rdfs:subClassOf mionto:Cell ;
+	rdfs:label "Müller cell" .
+
+
+###  http://purl.obolibrary.org/obo/CL_0000740
+obo:CL_0000740
+	rdfs:subClassOf mionto:Cell ;
+	rdfs:label "Retinal Ganglion Cell" .
+
+
+###  http://purl.obolibrary.org/obo/CL_0003048
+obo:CL_0003048
+	rdfs:subClassOf mionto:photoreceptor ;
+	rdfs:label "L-cone" .
+
+
+###  http://purl.obolibrary.org/obo/CL_0003049
+obo:CL_0003049
+	rdfs:subClassOf mionto:photoreceptor ;
+	rdfs:label "S-cone" .
+
+
+###  http://purl.obolibrary.org/obo/GO_0005576
+obo:GO_0005576
+	rdfs:subClassOf mionto:organelle ;
+	rdfs:label "Extracellular region" .
+
+
+###  http://purl.obolibrary.org/obo/GO_0005634
+obo:GO_0005634
+	rdfs:subClassOf mionto:organelle ;
+	metobo:part_of obo:CL_0000740 ;
+	rdfs:label "Nucleus" .
+
+
+###  http://purl.obolibrary.org/obo/GO_0005739
+obo:GO_0005739
+	rdfs:subClassOf mionto:organelle ;
+	rdfs:label "Mitochondrion" .
+
+
+###  http://purl.obolibrary.org/obo/GO_0005829
+obo:GO_0005829
+	rdfs:subClassOf mionto:organelle ;
+	rdfs:label "Cytosol" .
+
+
+###  http://purl.obolibrary.org/obo/GO_0005886
+obo:GO_0005886
+	rdfs:subClassOf mionto:organelle ;
+	rdfs:label "Cell membrane" .
+
+
+###  http://purl.obolibrary.org/obo/GO_0030425
+obo:GO_0030425
+	rdfs:subClassOf mionto:organelle ;
+	rdfs:label "Dendrite" .
+
+
+###  http://purl.obolibrary.org/obo/GO_0042175
+obo:GO_0042175
+	rdfs:subClassOf mionto:organelle ;
+	rdfs:label "Endoplasmic reticulum" .
+
+
+###  http://purl.obolibrary.org/obo/GO_0097386
+obo:GO_0097386
+	rdfs:subClassOf mionto:organelle ;
+	rdfs:label "Glial cell projection" .
+
+
+###  http://purl.obolibrary.org/obo/VTO_0010655
+obo:VTO_0010655
+	rdfs:subClassOf mionto:Animal ;
+	rdfs:label "Canis lupus familiaris (dog)" .
+
+
+###  http://purl.obolibrary.org/obo/VTO_0011065
+obo:VTO_0011065
+	rdfs:subClassOf mionto:Animal ;
+	rdfs:label "Bos taurus (cow)" .
+
+
+###  http://purl.obolibrary.org/obo/VTO_0011101
+obo:VTO_0011101
+	rdfs:subClassOf mionto:Animal ;
+	rdfs:label "Capra (goat)" .
+
+
+###  http://purl.obolibrary.org/obo/VTO_0011141
+obo:VTO_0011141
+	rdfs:subClassOf mionto:Animal ;
+	rdfs:label "Ovis aries (sheep)" .
+
+
+###  http://purl.obolibrary.org/obo/VTO_0011859
+obo:VTO_0011859
+	rdfs:subClassOf mionto:Animal ;
+	rdfs:label "Chlorocebus sabaeus (green monkey)" .
+
+
+###  http://purl.obolibrary.org/obo/VTO_0011886
+obo:VTO_0011886
+	rdfs:subClassOf mionto:Animal ;
+	rdfs:label "Macaca mulatta (rhesus macaque)" .
+
+
+###  http://purl.obolibrary.org/obo/VTO_0011993
+obo:VTO_0011993
+	rdfs:subClassOf mionto:Animal ;
+	rdfs:label "Homo sapiens (human)"@en .
+
+
+###  http://purl.obolibrary.org/obo/VTO_0012040
+obo:VTO_0012040
+	rdfs:subClassOf mionto:Animal ;
+	rdfs:label "Callithrix jacchus (titi monkey)" .
+
+
+###  http://purl.obolibrary.org/obo/VTO_0012274
+obo:VTO_0012274
+	rdfs:subClassOf mionto:Animal ;
+	rdfs:label "Oryctolagus cuniculus (rabbit)" .
+
+
+###  http://purl.obolibrary.org/obo/VTO_0012605
+obo:VTO_0012605
+	rdfs:subClassOf mionto:Animal ;
+	rdfs:label "Cavia porcellus (guinea pig)" .
+
+
+###  http://purl.obolibrary.org/obo/VTO_0014661
+obo:VTO_0014661
+	rdfs:subClassOf mionto:Animal ;
+	rdfs:label "Mus musculus (mouse)"@en .
+
+
+###  http://purl.obolibrary.org/obo/VTO_0014927
+obo:VTO_0014927
+	rdfs:subClassOf mionto:Animal ;
+	rdfs:label "Rattus norvegicus (rat)"@en .
+
+
+###  http://purl.obolibrary.org/obo/VTO_0031728
+obo:VTO_0031728
+	rdfs:subClassOf mionto:Animal ;
+	rdfs:label "Gallus gallus (chicken)"@en .
+
+
+###  http://purl.obolibrary.org/obo/VTO_0039818
+obo:VTO_0039818
+	rdfs:subClassOf mionto:Animal ;
+	rdfs:label "Danio rerio (zebrafish)" .
+
+
+###  http://purl.uniprot.org/core/Protein
+up:Protein
+	rdfs:label "protein"@en .
+
+
+###  https://abclonal.com
+<https://abclonal.com>
+	rdfs:subClassOf mionto:Company ;
+	rdfs:label "ABclonal" .
+
+
+###  https://www.abcam.com
+<https://www.abcam.com>
+	rdfs:subClassOf mionto:Company ;
+	rdfs:label "Abcam" .
+
+
+###  https://www.genetex.com
+<https://www.genetex.com>
+	rdfs:subClassOf mionto:Company ;
+	rdfs:label "GeneTex" .
+
+
+###  https://www.scbt.com
+<https://www.scbt.com>
+	rdfs:subClassOf mionto:Company ;
+	rdfs:label "Santa Cruz" .
+
+
+###  https://www.sigmaaldrich.com
+<https://www.sigmaaldrich.com>
+	rdfs:subClassOf mionto:Company ;
+	rdfs:label "Milipore Sigmaaldrich"@en .
+
+
+###  https://www.sysy.com
+<https://www.sysy.com>
+	rdfs:subClassOf mionto:Company ;
+	rdfs:label "Synaptic Systems" .
+
+
+###  https://www.thermofisher.com
+<https://www.thermofisher.com>
+	rdfs:subClassOf mionto:Company ;
+	rdfs:label "ThermoFisher" .
+
+
+###  https://dayhoff.inf.um.es/ontologies/anticuerpos#Animal
+mionto:Animal
+	rdfs:label "animal"@en .
+
+
+###  https://dayhoff.inf.um.es/ontologies/anticuerpos#Antibody
+mionto:Antibody
+	rdfs:label "antibody"@en .
+
+
+###  https://dayhoff.inf.um.es/ontologies/anticuerpos#AntibodyArray
+mionto:AntibodyArray
+	rdfs:subClassOf mionto:Application ;
+	rdfs:label "Antibody array" .
+
+
+###  https://dayhoff.inf.um.es/ontologies/anticuerpos#Application
+mionto:Application
+	rdfs:label "application"@en .
+
+
+###  https://dayhoff.inf.um.es/ontologies/anticuerpos#Cell
+mionto:Cell
+	rdfs:label "cell"@en .
+
+
+###  https://dayhoff.inf.um.es/ontologies/anticuerpos#Clonality
+mionto:Clonality
+	mionto:characteristic_of mionto:Antibody ;
+	rdfs:label "clonality"@en .
+
+
+###  https://dayhoff.inf.um.es/ontologies/anticuerpos#Company
+mionto:Company
+	rdfs:label "company"@en .
+
+
+###  https://dayhoff.inf.um.es/ontologies/anticuerpos#ELISA
+mionto:ELISA
+	rdfs:subClassOf mionto:Application ;
+	rdfs:label "ELISA" .
+
+
+###  https://dayhoff.inf.um.es/ontologies/anticuerpos#FlowCitometry
+mionto:FlowCitometry
+	rdfs:subClassOf mionto:Application ;
+	rdfs:label "Flow citometry" .
+
+
+###  https://dayhoff.inf.um.es/ontologies/anticuerpos#Freezer
+mionto:Freezer
+	rdfs:subClassOf mionto:Storage ;
+	rdfs:label "freezer"@en .
+
+
+###  https://dayhoff.inf.um.es/ontologies/anticuerpos#Fridge
+mionto:Fridge
+	rdfs:subClassOf mionto:Storage ;
+	rdfs:label "fridge"@en .
+
+
+###  https://dayhoff.inf.um.es/ontologies/anticuerpos#ImmunoElectroMicroscopy
+mionto:ImmunoElectroMicroscopy
+	rdfs:subClassOf mionto:Application ;
+	rdfs:label "Immuno-electron Microscopy" .
+
+
+###  https://dayhoff.inf.um.es/ontologies/anticuerpos#Immunofluorescence
+mionto:Immunofluorescence
+	rdfs:subClassOf mionto:Application ;
+	rdfs:label "immunofluorescence" .
+
+
+###  https://dayhoff.inf.um.es/ontologies/anticuerpos#Immunohistochemistry
+mionto:Immunohistochemistry
+	rdfs:subClassOf mionto:Application ;
+	rdfs:label "immunohistochemistry" .
+
+
+###  https://dayhoff.inf.um.es/ontologies/anticuerpos#Immunoprecipitation
+mionto:Immunoprecipitation
+	rdfs:subClassOf mionto:Application ;
+	rdfs:label "Immunoprecipitation" .
+
+
+###  https://dayhoff.inf.um.es/ontologies/anticuerpos#Monoclonal
+mionto:Monoclonal
+	rdfs:subClassOf mionto:Clonality ;
+	rdfs:label "Monoclonal" .
+
+
+###  https://dayhoff.inf.um.es/ontologies/anticuerpos#Polyclonal
+mionto:Polyclonal
+	rdfs:subClassOf mionto:Clonality ;
+	rdfs:label "Polyclonal" .
+
+
+###  https://dayhoff.inf.um.es/ontologies/anticuerpos#Storage
+mionto:Storage
+	rdfs:label "storage" .
+
+
+###  https://dayhoff.inf.um.es/ontologies/anticuerpos#WesternBlotting
+mionto:WesternBlotting
+	rdfs:subClassOf mionto:Application ;
+	rdfs:label "western blotting"@en .
+
+
+###  https://dayhoff.inf.um.es/ontologies/anticuerpos#organelle
+mionto:organelle
+	rdfs:label "Organelle" .
+
+
+###  https://dayhoff.inf.um.es/ontologies/anticuerpos#photoreceptor
+mionto:photoreceptor
+	rdfs:subClassOf mionto:Cell ;
+	rdfs:label "Photoreceptor" .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://abclonal.com/catalog-antibodies/ComplementfactorHRabbitpAb/A2166
+<https://abclonal.com/catalog-antibodies/ComplementfactorHRabbitpAb/A2166> 
+                                                                           owl:sameAs mionto:CFHABclonal ;
+                                                                           rdfs:label "CFH ABclonal antibody info" .
+
+
+###  https://dayhoff.inf.um.es/ontologies/anticuerpos#ASCSantaCruz
+mionto:ASCSantaCruz 
+                                                                         rdf:type mionto:Antibody ;
+                                                                          mionto:applies_to mionto:ELISA;
+                                                                          mionto:applies_to mionto:Immunofluorescence;
+                                                                          mionto:applies_to mionto:Immunohistochemistry;
+                                                                          mionto:applies_to mionto:Immunoprecipitation;
+                                                                          mionto:applies_to mionto:WesternBlotting;
+                                                                          mionto:has_clonality mionto:Monoclonal;
+                                                                          mionto:has_Company <https://www.scbt.com>;
+                                                                          mionto:host obo:VTO_0014661;
+                                                                          mionto:reactivity_in obo:VTO_0011993;
+                                                                          mionto:reactivity_in obo:VTO_0014661;
+                                                                          mionto:reactivity_in obo:VTO_0014927;
+                                                                          mionto:storaged_in mionto:Fridge;
+                                                                owl:sameAs <https://www.scbt.com/p/asc-antibody-b-3> ;
+                                                                mionto:detects_antigen uniprot:Q9ULZ3 ;
+                                                                rdfs:comment "usage at 1:1000 at IF" ;
+                                                                rdfs:label "ASC SantaCruz" ;
+                                                                mionto:citations 584 .
+
+
+
+###  https://dayhoff.inf.um.es/ontologies/anticuerpos#Aqp4Milipore
+mionto:Aqp4Milipore 
+                                                                         rdf:type mionto:Antibody ;
+                                                                          mionto:applies_to mionto:Immunofluorescence;
+                                                                          mionto:applies_to mionto:Immunohistochemistry;
+                                                                          mionto:applies_to mionto:WesternBlotting;
+                                                                          mionto:has_clonality mionto:Polyclonal;
+                                                                          mionto:has_Company <https://www.sigmaaldrich.com>;
+                                                                          mionto:host obo:VTO_0012274;
+                                                                          mionto:reactivity_in obo:VTO_0011993;
+                                                                          mionto:reactivity_in obo:VTO_0014661;
+                                                                          mionto:reactivity_in obo:VTO_0014927;
+                                                                          mionto:storaged_in mionto:Freezer;
+                                                                owl:sameAs <https://www.sigmaaldrich.com/DE/en/product/sigma/hpa014784> ;
+                                                                mionto:detects_antigen uniprot:P55087 ;
+                                                                rdfs:comment "usage at 1:2500 in IF" ;
+                                                                rdfs:label "Aqp4 Milipore" ;
+                                                                mionto:citations 37 .
+
+
+
+###  https://dayhoff.inf.um.es/ontologies/anticuerpos#Brn3aMilipore
+mionto:Brn3aMilipore 
+                                                                          rdf:type mionto:Antibody ;
+														mionto:applies_to mionto:Immunofluorescence ;
+                                                                          	mionto:applies_to  mionto:Immunohistochemistry;
+                                                                          	mionto:applies_to  mionto:WesternBlotting;
+                                                                          	mionto:has_clonality  mionto:Monoclonal;
+                                                                          	mionto:has_Company  <https://www.sigmaaldrich.com>;
+                                                                          	mionto:host  obo:VTO_0014661;
+                                                                          	mionto:reactivity_in  obo:VTO_0011993;
+                                                                          	mionto:reactivity_in  obo:VTO_0014661;
+                                                                          	mionto:reactivity_in  obo:VTO_0014927;
+                                                                          	mionto:reactivity_in  obo:VTO_0031728;
+                                                                          	mionto:storaged_in  mionto:Freezer;
+                                                                 owl:sameAs <https://www.sigmaaldrich.com/DE/en/product/mm/mab1585> ;
+                                                                 mionto:detects_antigen uniprot:Q01851 ;
+                                                                 rdfs:comment "usage at 1:300 in IF" ;
+                                                                 rdfs:label "Brn3a Milipore"@en ;
+                                                                 mionto:citations 267 .
+
+
+
+###  https://dayhoff.inf.um.es/ontologies/anticuerpos#Brn3aSantaCruz
+mionto:Brn3aSantaCruz 
+                                                                           rdf:type mionto:Antibody ;
+                                                                           
+                                                                          	 mionto:applies_to mionto:Immunofluorescence;
+                                                                           
+                                                                          	 mionto:applies_to  mionto:Immunohistochemistry;
+                                                                           
+                                                                          	 mionto:applies_to  mionto:WesternBlotting;
+                                                                           
+                                                                          	 mionto:has_clonality  mionto:Polyclonal;
+                                                                           
+                                                                          	 mionto:has_Company  <https://www.scbt.com>;
+                                                                           
+                                                                          	 mionto:host  obo:VTO_0011101;
+                                                                           
+                                                                          	 mionto:reactivity_in  obo:VTO_0011993;
+                                                                           
+                                                                          	 mionto:reactivity_in  obo:VTO_0014661;
+                                                                           
+                                                                          	 mionto:reactivity_in  obo:VTO_0014927;
+                                                                           
+                                                                          	 mionto:storaged_in  mionto:Fridge ;
+                                                                  owl:sameAs <https://www.scbt.com/p/brn-3a-antibody-c-20?requestFrom=search> ;
+                                                                  mionto:detects_antigen uniprot:Q01851 ;
+                                                                  rdfs:comment "usage at 1:500 in IF" ;
+                                                                  rdfs:label "Brn3a SantaCruz" ;
+                                                                  mionto:citations 219 .
+
+
+
+###  https://dayhoff.inf.um.es/ontologies/anticuerpos#Brn3aSynapticSystems
+mionto:Brn3aSynapticSystems 
+                                                                                 rdf:type mionto:Antibody ;
+                                                                                 mionto:applies_to mionto:Immunofluorescence;
+                                                                                 mionto:applies_to mionto:Immunohistochemistry;
+                                                                                 mionto:has_clonality mionto:Polyclonal;
+                                                                                 mionto:has_Company <https://www.sysy.com>;
+                                                                                 mionto:host obo:VTO_0012605;
+                                                                                 mionto:reactivity_in obo:VTO_0014661;
+                                                                                 mionto:storaged_in mionto:Freezer;
+                                                                        owl:sameAs <https://www.sysy.com/product/411004> ;
+                                                                        mionto:detects_antigen uniprot:Q01851 ;
+                                                                        rdfs:comment "usage at 1:500 in IF" ;
+                                                                        rdfs:label "Brn3a Synaptic Systems" ;
+                                                                        mionto:citations 3 .
+
+
+
+###  https://dayhoff.inf.um.es/ontologies/anticuerpos#CFHABclonal
+mionto:CFHABclonal 
+                                                                        rdf:type mionto:Antibody ;
+                                                                        mionto:applies_to mionto:Immunofluorescence;
+                                                                        mionto:applies_to mionto:Immunohistochemistry;
+                                                                        mionto:applies_to mionto:WesternBlotting;
+                                                                        mionto:has_clonality mionto:Polyclonal;
+                                                                        mionto:has_Company <https://abclonal.com>;
+                                                                        mionto:host obo:VTO_0012274;
+                                                                        mionto:reactivity_in obo:VTO_0011993;
+                                                                        mionto:reactivity_in obo:VTO_0014661;
+                                                                        mionto:reactivity_in obo:VTO_0014927;
+                                                                        mionto:storaged_in mionto:Freezer;
+                                                               mionto:detects_antigen uniprot:P08603 ;
+                                                               rdfs:comment "usage at 1:250 in IF" ;
+                                                               rdfs:label "CFH ABclonal" ;
+                                                               mionto:citations 0 .
+
+
+###  https://dayhoff.inf.um.es/ontologies/anticuerpos#Caspase1Abcam
+mionto:Caspase1Abcam 
+                                                                          rdf:type mionto:Antibody ;mionto:applies_to  mionto:Immunoprecipitation;
+                                                                          	mionto:applies_to  mionto:WesternBlotting;
+                                                                          	mionto:has_clonality  mionto:Polyclonal;
+                                                                          	mionto:has_Company  <https://www.abcam.com>;
+                                                                          	mionto:host  obo:VTO_0012274;
+                                                                          	mionto:reactivity_in  obo:VTO_0011993;
+                                                                          	mionto:reactivity_in  obo:VTO_0014927;
+                                                                          	mionto:storaged_in  mionto:Freezer;
+                                                                 owl:sameAs <https://www.abcam.com/products/primary-antibodies/caspase-1-antibody-epr19672-ab207802.html> ;
+                                                                 mionto:detects_antigen uniprot:P29466 ;
+                                                                 rdfs:comment "usage at 1:1000 in WB" ;
+                                                                 rdfs:label "Caspase 1 Abcam" ;
+                                                                 mionto:citations 124 .
+
+
+
+###  https://dayhoff.inf.um.es/ontologies/anticuerpos#Caspase3SantaCruz
+mionto:Caspase3SantaCruz 
+                                                                              rdf:type mionto:Antibody ;
+                                                                              mionto:applies_to  mionto:ELISA;
+                                                                              mionto:applies_to  mionto:FlowCitometry;
+                                                                              mionto:applies_to  mionto:Immunofluorescence;
+                                                                              mionto:applies_to  mionto:Immunohistochemistry;
+                                                                              mionto:applies_to  mionto:Immunoprecipitation;
+                                                                              mionto:applies_to  mionto:WesternBlotting;
+                                                                              mionto:has_clonality  mionto:Monoclonal;
+                                                                              mionto:has_Company  <https://www.scbt.com>;
+                                                                              mionto:host  obo:VTO_0014661;
+                                                                              mionto:reactivity_in  obo:VTO_0011993;
+                                                                              mionto:reactivity_in  obo:VTO_0014661;
+                                                                              mionto:reactivity_in  obo:VTO_0014927;
+                                                                              mionto:storaged_in  mionto:Fridge;
+                                                                     owl:sameAs <https://www.scbt.com/p/caspase-3-antibody-e-8> ;
+                                                                     mionto:detects_antigen uniprot:P42574 ;
+                                                                     rdfs:comment "usage at 1:200 in IF" ;
+                                                                     rdfs:label "Caspase 3 SantaCruz" ;
+                                                                     mionto:citations 621 .
+
+
+
+###  https://dayhoff.inf.um.es/ontologies/anticuerpos#GfapAbcam
+mionto:GfapAbcam 
+                                                                      rdf:type mionto:Antibody ;
+                                                                      mionto:applies_to mionto:ELISA;
+                                                                      mionto:applies_to mionto:Immunofluorescence;
+                                                                      mionto:applies_to mionto:Immunohistochemistry;
+                                                                      mionto:applies_to mionto:WesternBlotting;
+                                                                      mionto:has_clonality mionto:Polyclonal;
+                                                                      mionto:has_Company <https://www.abcam.com>;
+                                                                      mionto:host obo:VTO_0011101;
+                                                                      mionto:reactivity_in obo:VTO_0010655;
+                                                                      mionto:reactivity_in obo:VTO_0011065;
+                                                                      mionto:reactivity_in obo:VTO_0011993;
+                                                                      mionto:reactivity_in obo:VTO_0014661;
+                                                                      mionto:reactivity_in obo:VTO_0014927;
+                                                                      mionto:reactivity_in obo:VTO_0039818;
+                                                                      mionto:storaged_in mionto:Freezer;
+                                                             owl:sameAs <https://www.abcam.com/products/primary-antibodies/gfap-antibody-ab53554.html> ;
+                                                             mionto:detects_antigen uniprot:P14136 ;
+                                                             rdfs:comment "usage at 1:1000 in IF" ;
+                                                             rdfs:label "Gfap Abcam" ;
+                                                             mionto:citations 425 .
+
+
+
+###  https://dayhoff.inf.um.es/ontologies/anticuerpos#GfapMilipore
+mionto:GfapMilipore 
+                                                                         rdf:type mionto:Antibody ;
+                                                                          mionto:applies_to mionto:AntibodyArray;
+                                                                          mionto:applies_to mionto:Immunofluorescence;
+                                                                          mionto:applies_to mionto:Immunohistochemistry;
+                                                                          mionto:applies_to mionto:WesternBlotting;
+                                                                          mionto:has_clonality mionto:Polyclonal;
+                                                                          mionto:has_Company <https://www.sigmaaldrich.com>;
+                                                                          mionto:host obo:VTO_0012274;
+                                                                          mionto:reactivity_in obo:VTO_0011101;
+                                                                          mionto:reactivity_in obo:VTO_0011993;
+                                                                          mionto:reactivity_in obo:VTO_0014661;
+                                                                          mionto:reactivity_in obo:VTO_0014927;
+                                                                          mionto:storaged_in mionto:Freezer;
+                                                                owl:sameAs <https://www.sigmaaldrich.com/DE/en/product/sigma/g9269> ;
+                                                                mionto:detects_antigen uniprot:P14136 ;
+                                                                rdfs:comment "usage at 1:500 in IF" ;
+                                                                rdfs:label "Gfap Milipore" ;
+                                                                mionto:citations 459 .
+
+
+
+###  https://dayhoff.inf.um.es/ontologies/anticuerpos#GfapSynapticSystems
+mionto:GfapSynapticSystems
+                                                                                rdf:type mionto:Antibody ;
+                                                                                mionto:applies_to mionto:Immunofluorescence;
+                                                                                mionto:applies_to mionto:Immunohistochemistry;
+                                                                                mionto:applies_to mionto:WesternBlotting;
+                                                                                mionto:has_clonality mionto:Polyclonal;
+                                                                                mionto:has_Company <https://www.sysy.com>;
+                                                                                mionto:host obo:VTO_0012605;
+                                                                                mionto:reactivity_in obo:VTO_0011141;
+                                                                                mionto:reactivity_in obo:VTO_0011993;
+                                                                                mionto:reactivity_in obo:VTO_0014661;
+                                                                                mionto:reactivity_in obo:VTO_0014927;
+                                                                                mionto:storaged_in mionto:Freezer;
+                                                                       owl:sameAs <https://www.sysy.com/product/173004> ;
+                                                                       mionto:detects_antigen uniprot:P14136 ;
+                                                                       rdfs:comment "usage at 1:1000 in IF" ;
+                                                                       rdfs:label "Gfap Synaptic Systems" ;
+                                                                       mionto:citations 105 .
+
+
+
+###  https://dayhoff.inf.um.es/ontologies/anticuerpos#Iba1Abcam
+mionto:Iba1Abcam 
+                                                                      rdf:type mionto:Antibody ;
+                                                                      mionto:applies_to mionto:ImmunoElectroMicroscopy;
+                                                                      mionto:applies_to mionto:Immunofluorescence;
+                                                                      mionto:applies_to mionto:Immunohistochemistry;
+                                                                      mionto:applies_to mionto:WesternBlotting;
+                                                                      mionto:has_clonality mionto:Polyclonal;
+                                                                      mionto:has_Company <https://www.abcam.com>;
+                                                                      mionto:host obo:VTO_0011101;
+                                                                      mionto:reactivity_in obo:VTO_0010655;
+                                                                      mionto:reactivity_in obo:VTO_0011065;
+                                                                      mionto:reactivity_in obo:VTO_0011886;
+                                                                      mionto:reactivity_in obo:VTO_0011993;
+                                                                      mionto:reactivity_in obo:VTO_0012040;
+                                                                      mionto:reactivity_in obo:VTO_0012274;
+                                                                      mionto:reactivity_in obo:VTO_0012605;
+                                                                      mionto:reactivity_in obo:VTO_0014661;
+                                                                      mionto:reactivity_in obo:VTO_0014927;
+                                                                      mionto:storaged_in mionto:Freezer;
+                                                             owl:sameAs <https://www.abcam.com/products/primary-antibodies/iba1-antibody-ab5076.html> ;
+                                                             mionto:detects_antigen uniprot:P55008 ;
+                                                             rdfs:comment "usage at 1:500 in IF" ;
+                                                             rdfs:label "Iba1 Abcam" ;
+                                                             mionto:citations 1493 .
+
+
+
+###  https://dayhoff.inf.um.es/ontologies/anticuerpos#Iba1Abcam2
+mionto:Iba1Abcam2 
+                                                                       rdf:type mionto:Antibody ;
+                                                                       mionto:applies_to mionto:FlowCitometry;
+                                                                       mionto:applies_to mionto:Immunofluorescence;
+                                                                       mionto:applies_to mionto:Immunohistochemistry;
+                                                                       mionto:applies_to mionto:WesternBlotting;
+                                                                       mionto:has_clonality mionto:Polyclonal;
+                                                                       mionto:has_Company <https://www.abcam.com>;
+                                                                       mionto:host obo:VTO_0012274;
+                                                                       mionto:reactivity_in obo:VTO_0011141;
+                                                                       mionto:reactivity_in obo:VTO_0011993;
+                                                                       mionto:reactivity_in obo:VTO_0014661;
+                                                                       mionto:reactivity_in obo:VTO_0014927;
+                                                                       mionto:storaged_in mionto:Freezer;
+                                                              owl:sameAs <https://www.abcam.com/products/primary-antibodies/iba1-antibody-epr16588-ab178846.html> ;
+                                                              mionto:detects_antigen uniprot:P55008 ;
+                                                              rdfs:comment "usage at 1:500 in IF" ;
+                                                              rdfs:label "Iba1 Abcam 2" ;
+                                                              mionto:citations 540 .
+
+
+
+###  https://dayhoff.inf.um.es/ontologies/anticuerpos#MLKLAbcam
+mionto:MLKLAbcam 
+                                                                      rdf:type mionto:Antibody ;
+                                                                      mionto:applies_to mionto:Immunofluorescence;
+                                                                      mionto:applies_to mionto:Immunoprecipitation;
+                                                                      mionto:applies_to mionto:WesternBlotting;
+                                                                      mionto:has_clonality mionto:Polyclonal;
+                                                                      mionto:has_Company <https://www.abcam.com>;
+                                                                      mionto:host obo:VTO_0012274;
+                                                                      mionto:reactivity_in obo:VTO_0011993;
+                                                                      mionto:reactivity_in obo:VTO_0014661;
+                                                                      mionto:storaged_in mionto:Freezer;
+                                                             owl:sameAs <https://www.abcam.com/products/primary-antibodies/mlkl-antibody-ab183770.html> ;
+                                                             mionto:detects_antigen uniprot:Q8NB16 ;
+                                                             rdfs:comment "usage at 1:100 in IF" ;
+                                                             rdfs:label "MLKL Abcam" ;
+                                                             mionto:citations 21 .
+
+
+
+###  https://dayhoff.inf.um.es/ontologies/anticuerpos#OpsinRG
+mionto:OpsinRG 
+                                                                    rdf:type mionto:Antibody ;
+                                                                    mionto:applies_to  mionto:Immunofluorescence;
+                                                                    mionto:applies_to  mionto:Immunohistochemistry;
+                                                                    mionto:applies_to  mionto:WesternBlotting;
+                                                                    mionto:has_clonality  mionto:Polyclonal;
+                                                                    mionto:has_Company  <https://www.thermofisher.com>;
+                                                                    mionto:host  obo:VTO_0031728;
+                                                                    mionto:reactivity_in  obo:VTO_0014661;
+                                                                    mionto:reactivity_in  obo:VTO_0014927;
+                                                                    mionto:storaged_in  mionto:Freezer;
+                                                           owl:sameAs <https://www.thermofisher.com/antibody/product/PA1-9517.html?CID=AFLCA-PA1-9517> ;
+                                                           mionto:detects_antigen uniprot:Q9H1Y3 ;
+                                                           rdfs:comment "usage at 1:500 in IF" ;
+                                                           rdfs:label "Opsin Red/Green" ;
+                                                           mionto:citations 176 .
+
+
+
+###  https://dayhoff.inf.um.es/ontologies/anticuerpos#P2X7SantaCruz
+mionto:P2X7SantaCruz
+                                                                          rdf:type mionto:Antibody ;mionto:applies_to  mionto:ELISA;
+                                                                          	mionto:applies_to  mionto:Immunofluorescence;
+                                                                          	mionto:applies_to  mionto:Immunoprecipitation;
+                                                                          	mionto:applies_to  mionto:WesternBlotting;
+                                                                          	mionto:has_clonality  mionto:Monoclonal;
+                                                                          	mionto:has_Company  <https://www.scbt.com>;
+                                                                          	mionto:host  obo:VTO_0014661;
+                                                                          	mionto:reactivity_in  obo:VTO_0011993;
+                                                                          	mionto:reactivity_in  obo:VTO_0014661;
+                                                                          	mionto:reactivity_in  obo:VTO_0014927;
+                                                                          	mionto:storaged_in  mionto:Fridge;
+                                                                 owl:sameAs <https://www.scbt.com/es/p/p2x7-antibody-d-1> ;
+                                                                 mionto:detects_antigen uniprot:Q99572 ;
+                                                                 rdfs:comment "usage at 1:200 in WB" ;
+                                                                 rdfs:label "P2X7 SantaCruz" ;
+                                                                 mionto:citations 16 .
+
+
+
+###  https://dayhoff.inf.um.es/ontologies/anticuerpos#RbpmsGenetex
+mionto:RbpmsGenetex 
+                                                                         rdf:type mionto:Antibody ;
+                                                                          mionto:applies_to mionto:Immunofluorescence;
+                                                                          mionto:applies_to mionto:Immunohistochemistry;
+                                                                          mionto:applies_to mionto:WesternBlotting;
+                                                                          mionto:has_clonality <https://www.genetex.com>;
+                                                                          mionto:has_clonality mionto:Freezer;
+                                                                          mionto:has_clonality mionto:Polyclonal;
+                                                                          mionto:host obo:VTO_0012274;
+                                                                          mionto:reactivity_in obo:VTO_0011859;
+                                                                          mionto:reactivity_in obo:VTO_0011993;
+                                                                          mionto:reactivity_in obo:VTO_0014661;
+                                                                          mionto:reactivity_in obo:VTO_0014927;
+                                                                owl:sameAs <https://www.genetex.com/Product/Detail/RBPMS-antibody/GTX118619> ;
+                                                                mionto:detects_antigen uniprot:Q93062 ;
+                                                                rdfs:comment "usage at 1:300 in IF" ;
+                                                                rdfs:label "Rbpms Genetex" ;
+                                                                mionto:citations 18 .
+
+
+
+###  https://dayhoff.inf.um.es/ontologies/anticuerpos#RecoverinMilipore
+mionto:RecoverinMilipore 
+                                                                              rdf:type mionto:Antibody ;
+                                                                              mionto:applies_to  mionto:Immunofluorescence;
+                                                                              mionto:applies_to  mionto:Immunohistochemistry;
+                                                                              mionto:applies_to  mionto:WesternBlotting;
+                                                                              mionto:has_clonality  mionto:Polyclonal;
+                                                                              mionto:has_Company  <https://www.sigmaaldrich.com>;
+                                                                              mionto:host  obo:VTO_0012274;
+                                                                              mionto:reactivity_in  obo:VTO_0011993;
+                                                                              mionto:reactivity_in  obo:VTO_0014661;
+                                                                              mionto:reactivity_in  obo:VTO_0014927;
+                                                                              mionto:reactivity_in  obo:VTO_0031728;
+                                                                              mionto:reactivity_in  obo:VTO_0039818;
+                                                                              mionto:storaged_in  mionto:Freezer;
+                                                                     owl:sameAs <https://www.sigmaaldrich.com/DE/en/product/mm/ab5585> ;
+                                                                     mionto:detects_antigen uniprot:P35243 ;
+                                                                     rdfs:comment "usage at 1:500 in IF" ;
+                                                                     rdfs:label "Recoverin Milipore" ;
+                                                                     mionto:citations 220 .
+
+
+###  https://dayhoff.inf.um.es/ontologies/anticuerpos#TMEM119Abcam
+mionto:TMEM119Abcam 
+                                                                         rdf:type mionto:Antibody ;
+                                                                          mionto:applies_to mionto:Immunofluorescence;
+                                                                          mionto:applies_to mionto:Immunohistochemistry;
+                                                                          mionto:applies_to mionto:WesternBlotting;
+                                                                          mionto:has_clonality mionto:Polyclonal;
+                                                                          mionto:has_Company <https://www.abcam.com>;
+                                                                          mionto:host obo:VTO_0012274;
+                                                                          mionto:reactivity_in obo:VTO_0011993;
+                                                                          mionto:reactivity_in obo:VTO_0014661;
+                                                                          mionto:storaged_in mionto:Freezer;
+                                                                owl:sameAs <https://www.abcam.com/products/primary-antibodies/tmem119-antibody-28-3-microglial-marker-ab209064.html> ;
+                                                                mionto:detects_antigen uniprot:Q8R138 ;
+                                                                rdfs:comment "usage at 1:400 in IF" ;
+                                                                rdfs:label "TMEM119 Abcam" ;
+                                                                mionto:citations 159 .
+
+
+
+###  https://dayhoff.inf.um.es/ontologies/anticuerpos#TNFR1Milipore
+mionto:TNFR1Milipore
+                                                                          rdf:type mionto:Antibody ;mionto:applies_to  mionto:Immunofluorescence;
+                                                                          	mionto:applies_to  mionto:Immunohistochemistry;
+                                                                          	mionto:has_clonality  mionto:Polyclonal;
+                                                                          	mionto:has_Company  <https://www.sigmaaldrich.com>;
+                                                                          	mionto:host  obo:VTO_0012274;
+                                                                          	mionto:reactivity_in  obo:VTO_0011993;
+                                                                          	mionto:reactivity_in  obo:VTO_0014661;
+                                                                          	mionto:storaged_in  mionto:Freezer;
+                                                                 owl:sameAs <https://www.sigmaaldrich.com/DE/en/product/sigma/hpa004102> ;
+											 mionto:detects_antigen uniprot:P19438 ;
+                                                                 rdfs:comment "usage at 1:500 in IF" ;
+                                                                 rdfs:label "TNFR1 Milipore" ;
+                                                                 mionto:citations 0 .
+
+
+
+###  https://www.abcam.com/products/primary-antibodies/caspase-1-antibody-epr19672-ab207802.html
+<https://www.abcam.com/products/primary-antibodies/caspase-1-antibody-epr19672-ab207802.html> 
+                                                                                              rdfs:label "Caspase 1 Abcam antibody info" .
+
+
+###  https://www.abcam.com/products/primary-antibodies/gfap-antibody-ab53554.html
+<https://www.abcam.com/products/primary-antibodies/gfap-antibody-ab53554.html> 
+                                                                               rdfs:label "Gfap Abcam antibody info" .
+
+
+###  https://www.abcam.com/products/primary-antibodies/iba1-antibody-ab5076.html
+<https://www.abcam.com/products/primary-antibodies/iba1-antibody-ab5076.html> 
+                                                                              rdfs:label "Iba1 Abcam antibody info" .
+
+
+###  https://www.abcam.com/products/primary-antibodies/iba1-antibody-epr16588-ab178846.html
+<https://www.abcam.com/products/primary-antibodies/iba1-antibody-epr16588-ab178846.html> 
+                                                                                         rdfs:label "Iba1 Abcam 2 antibody info" .
+
+
+###  https://www.abcam.com/products/primary-antibodies/mlkl-antibody-ab183770.html
+<https://www.abcam.com/products/primary-antibodies/mlkl-antibody-ab183770.html> 
+                                                                                rdfs:label "MLKL Abcam antibody info" .
+
+
+###  https://www.abcam.com/products/primary-antibodies/tmem119-antibody-28-3-microglial-marker-ab209064.html
+<https://www.abcam.com/products/primary-antibodies/tmem119-antibody-28-3-microglial-marker-ab209064.html> 
+                                                                                                          rdfs:label "TMEM119 Abcam antibody info" .
+
+
+###  https://www.genetex.com/Product/Detail/RBPMS-antibody/GTX118619
+<https://www.genetex.com/Product/Detail/RBPMS-antibody/GTX118619> 
+                                                                  rdfs:label "Rbms Genetex antibody info" .
+
+
+###  https://www.scbt.com/es/p/p2x7-antibody-d-1
+<https://www.scbt.com/es/p/p2x7-antibody-d-1> 
+                                              rdfs:label "P2X7 SantaCruz antibody info" .
+
+
+###  https://www.scbt.com/p/asc-antibody-b-3
+<https://www.scbt.com/p/asc-antibody-b-3> 
+                                          rdfs:label "ASC SantaCruz antibody info" .
+
+
+###  https://www.scbt.com/p/caspase-3-antibody-e-8
+<https://www.scbt.com/p/caspase-3-antibody-e-8> 
+                                                rdfs:label "Caspase 3 SantaCruz antibody info" .
+
+
+###  https://www.scbt.com/p/brn-3a-antibody-c-20?requestFrom=search
+<https://www.scbt.com/p/brn-3a-antibody-c-20?requestFrom=search> 
+                                                                 rdfs:label "Brn3a SantaCruz antibody info" .
+
+
+###  https://www.sigmaaldrich.com/DE/en/product/mm/ab5585
+<https://www.sigmaaldrich.com/DE/en/product/mm/ab5585> 
+                                                       rdfs:label "Recoverin Milipore antibody info" .
+
+
+###  https://www.sigmaaldrich.com/DE/en/product/mm/mab1585
+<https://www.sigmaaldrich.com/DE/en/product/mm/mab1585> 
+                                                        rdfs:label "Brn3a Milipore antibody info" .
+
+
+###  https://www.sigmaaldrich.com/DE/en/product/sigma/g9269
+<https://www.sigmaaldrich.com/DE/en/product/sigma/g9269> 
+                                                         rdfs:label "Gfap Milipore antibody info" .
+
+
+###  https://www.sigmaaldrich.com/DE/en/product/sigma/hpa004102
+<https://www.sigmaaldrich.com/DE/en/product/sigma/hpa004102> 
+                                                             rdfs:label "TNFR1 Milipore antibody info" .
+
+
+###  https://www.sigmaaldrich.com/DE/en/product/sigma/hpa014784
+<https://www.sigmaaldrich.com/DE/en/product/sigma/hpa014784> 
+                                                             rdfs:label "Aqp4 Milipore antibody info" .
+
+
+###  https://www.sysy.com/product/173004
+<https://www.sysy.com/product/173004> 
+                                      rdfs:label "Gfap Synaptic Systems antibody info" .
+
+
+###  https://www.sysy.com/product/411004
+<https://www.sysy.com/product/411004> 
+                                      rdfs:label "Brn3a Synaptic Systems antibody info" .
+
+
+###  https://www.thermofisher.com/antibody/product/PA1-9517.html?CID=AFLCA-PA1-9517
+<https://www.thermofisher.com/antibody/product/PA1-9517.html?CID=AFLCA-PA1-9517> 
+                                                                                 rdfs:label "Opsin Red/Green antibody info" .
+
+
+###  https://www.uniprot.org/uniprotkb/P08603
+uniprot:P08603 
+                                                    rdf:type up:Protein ;
+                                                    obo:RO_0001025  obo:GO_0005576;
+                                                    obo:RO_0001025  obo:GO_0005829;
+                                           rdfs:label "CFH protein" .
+
+
+###  https://www.uniprot.org/uniprotkb/P14136
+uniprot:P14136 
+                                                    rdf:type up:Protein ;
+                                                    obo:RO_0001025  obo:CL_0000127;
+                                                    obo:RO_0001025  obo:CL_0000636;
+                                                    obo:RO_0001025  obo:GO_0005829;
+                                           rdfs:label "Gfap protein" .
+
+
+###  https://www.uniprot.org/uniprotkb/P19438
+uniprot:P19438 
+                                                    rdf:type up:Protein ;
+                                                    obo:RO_0001025   obo:GO_0005886;
+                                           rdfs:label "TNFR1 protein" .
+
+
+###  https://www.uniprot.org/uniprotkb/P29466
+uniprot:P29466 
+                                                    rdf:type up:Protein ;
+                                                    obo:RO_0001025  obo:GO_0005829;
+                                                    obo:RO_0001025  obo:GO_0005886;
+                                           rdfs:label "Caspase 1 protein" .
+
+
+###  https://www.uniprot.org/uniprotkb/P35243
+uniprot:P35243 
+                                                    rdf:type up:Protein ;
+                                                    obo:RO_0001025  obo:CL_0000103;
+                                                    obo:RO_0001025  obo:GO_0005829;
+                                                    obo:RO_0001025  obo:GO_0005886;
+                                                    obo:RO_0001025  obo:GO_0030425;
+                                                    obo:RO_0001025  mionto:photoreceptor;
+                                           rdfs:label "Recoverin protein" .
+
+
+###  https://www.uniprot.org/uniprotkb/P42574
+uniprot:P42574 
+                                                    rdf:type up:Protein ;
+                                                    obo:RO_0001025  obo:GO_0005829;
+                                           rdfs:label "Caspase 3 protein" .
+
+
+###  https://www.uniprot.org/uniprotkb/P55008
+uniprot:P55008 
+                                                    rdf:type up:Protein ;
+                                                    obo:RO_0001025  obo:CL_0000129;
+                                                    obo:RO_0001025  obo:CL_0000235;
+                                                    obo:RO_0001025  obo:GO_0005634;
+                                                    obo:RO_0001025  obo:GO_0005829;
+                                                    obo:RO_0001025  obo:GO_0097386;
+                                           rdfs:label "Iba1 protein" .
+
+
+###  https://www.uniprot.org/uniprotkb/P55087
+uniprot:P55087 
+                                                    rdf:type up:Protein ;
+                                                    obo:RO_0001025  obo:GO_0005576;
+                                                    obo:RO_0001025  obo:GO_0005829;
+                                                    obo:RO_0001025  obo:GO_0005886;
+                                           rdfs:label "Aqp4 protein" .
+
+
+###  https://www.uniprot.org/uniprotkb/Q01851
+uniprot:Q01851 
+                                                    rdf:type up:Protein ;
+                                                    obo:RO_0001025  obo:CL_0000740;
+                                                    obo:RO_0001025  obo:GO_0005634;
+                                           rdfs:label "Brn3a Protein"@en .
+
+
+###  https://www.uniprot.org/uniprotkb/Q8NB16
+uniprot:Q8NB16 
+                                                    rdf:type up:Protein ;
+                                                    obo:RO_0001025  obo:GO_0005634;
+                                                    obo:RO_0001025  obo:GO_0005829;
+                                                    obo:RO_0001025  obo:GO_0005886;
+                                           rdfs:label "MLKL protein" .
+
+
+###  https://www.uniprot.org/uniprotkb/Q8R138
+uniprot:Q8R138 
+                                                    rdf:type up:Protein ;
+                                                    obo:RO_0001025  obo:CL_0000129;
+                                                    obo:RO_0001025  obo:GO_0005886;
+                                           rdfs:label "TMEM119 protein" .
+
+
+###  https://www.uniprot.org/uniprotkb/Q93062
+uniprot:Q93062 
+                                                    rdf:type up:Protein ;
+                                                    obo:RO_0001025  obo:CL_0000740;
+                                                    obo:RO_0001025  obo:GO_0005634;
+                                                    obo:RO_0001025  obo:GO_0005829;
+                                           rdfs:label "Rbpms protein" .
+
+
+###  https://www.uniprot.org/uniprotkb/Q99572
+uniprot:Q99572 
+                                                    rdf:type up:Protein ;
+                                                    obo:RO_0001025  obo:GO_0005886;
+                                           rdfs:label "P2X7 protein" .
+
+
+###  https://www.uniprot.org/uniprotkb/Q9H1Y3
+uniprot:Q9H1Y3 
+                                                    rdf:type up:Protein ;
+                                                    obo:RO_0001025  obo:CL_0003048;
+                                                    obo:RO_0001025  obo:CL_0003049;
+                                                    obo:RO_0001025  obo:GO_0005829;
+                                                    obo:RO_0001025  obo:GO_0005886;
+                                           rdfs:label "Opn3 protein" .
+
+
+###  https://www.uniprot.org/uniprotkb/Q9ULZ3
+uniprot:Q9ULZ3 
+                                                    rdf:type up:Protein ;
+                                                    obo:RO_0001025  obo:GO_0005634;
+                                                    obo:RO_0001025  obo:GO_0005739;
+                                                    obo:RO_0001025  obo:GO_0005829;
+                                                    obo:RO_0001025  obo:GO_0042175;
+                                           rdfs:label "ASC protein" .
+
+
